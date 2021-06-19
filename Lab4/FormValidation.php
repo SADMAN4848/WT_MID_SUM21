@@ -35,6 +35,7 @@
 	$err_bio="";
 	$char="?";
 	$char2="#";
+	$char3="@";
 	$hasError=false;
 	
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -101,7 +102,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$hasError=true;
 		$err_email="Email Required";		
 	}
-	
+	else if(!strpos($_POST,$char3["email"])){
+		$hasError=true;
+		$err_email="Should contain @";
+	}
 	else{
 		$email=$_POST["email"];
 	}
