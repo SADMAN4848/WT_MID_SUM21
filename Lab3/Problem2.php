@@ -1,4 +1,4 @@
-<?php
+<?PHP
 
 	$marks = 90;
 echo "Your grade for the course is : ";

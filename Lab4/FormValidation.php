@@ -1,5 +1,5 @@
 <?php
-	$name="";
+	$name='';
 	$err_name="";
 	$username="";
 	$err_username="";
